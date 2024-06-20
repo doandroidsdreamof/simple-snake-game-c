@@ -21,6 +21,8 @@ int direction_y = 0;
 Node *head = NULL;
 Node *tail = NULL;
 
+int snake_length = 3;
+
 void drawSnake() {
   Node *currentNode = head;
   while (currentNode != NULL) {
@@ -45,8 +47,6 @@ void drawGame() {
 
   EndDrawing();
 }
-
-int snake_length = 3;
 
 void handleMovement() {
   if (IsKeyDown(KEY_RIGHT)) {
@@ -90,13 +90,12 @@ void updateGame(float deltaTime) {
   if (timer >= movementDelay && !isGameOver) {
     timer = 0.0f;
     Node *currentHead = head;
-
-    int prevX, prevY;
-    prevX = currentHead->x;
-    prevY = currentHead->y;
+    //TODO bug fixed
+    int prevX = currentHead->x;
+    int prevY = currentHead->y;
+    currentHead->x += direction_x;
+    currentHead->y += direction_y;
     while (currentHead->next != NULL) {
-      currentHead->x += direction_x;
-      currentHead->y += direction_y;
 
       currentHead->next->x = prevX;
       currentHead->next->y = prevY;
