@@ -1,0 +1,92 @@
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.la
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Static and Shared libraries
+*.lib
+*.a
+*.dll
+*.dylib
+*.so
+
+# Executable files
+*.exe
+*.out
+*.app
+
+# Debug files
+*.dSYM/
+*.stackdump
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.log
+*.tags
+
+# CMake and other build directories
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+
+# CodeBlocks project files
+*.depend
+*.layout
+*.cbp
+
+# Dev-C++ project files
+*.dev
+
+# Visual Studio Code files
+.vscode/
+.vscode/*
+
+# Eclipse project files
+.cproject
+.project
+.settings/
+
+# JetBrains project files
+.idea/
+*.iml
+
+# MacOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+Desktop.ini
+
+# Other IDEs and tools
+*.vscode/
+*.vs/
+.idea/
+*.iml
+
+# Backup files
+*~
+
+# Coverage files
+*.gcno
+*.gcda
+*.gcov
+
+# Generated documentation
+doc/
+
+# Binary files
+bin/
+obj/
+lib/
+
