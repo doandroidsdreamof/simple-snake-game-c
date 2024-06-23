@@ -9,7 +9,10 @@ typedef struct Node {
 
 
 void insertLinkedList(Node **head, int x, int y);
+void pushLinkedList(Node **head);
 void printLinkedList(Node *node);
+void resetLinkedList(Node *node);
+                            
 
 #endif
 
