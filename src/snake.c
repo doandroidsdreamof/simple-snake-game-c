@@ -21,7 +21,7 @@ int score = 0;
 
 Node *head = NULL;
 
-int snake_length = 10;
+int snake_length = 3;
 
 int gridWidth = screenWidth / cellSize;
 int gridHeight = screenHeight / cellSize;
